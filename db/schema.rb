@@ -10,13 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160716214837) do
+ActiveRecord::Schema.define(version: 20160717193601) do
 
   create_table "pictures", force: :cascade do |t|
     t.string   "source"
     t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
+    t.string   "source_file_name"
+    t.string   "source_content_type"
+    t.integer  "source_file_size"
+    t.datetime "source_updated_at"
     t.index ["user_id"], name: "index_pictures_on_user_id"
   end
 
