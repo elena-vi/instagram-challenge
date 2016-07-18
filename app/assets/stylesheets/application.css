@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+
+body{
+    text-align: center;
+}
+
+.picture {
+    border: 10px solid #fff;
+    -webkit-box-shadow: 3px 3px 3px #777;
+    -moz-box-shadow: 3px 3px 3px #777;
+    box-shadow: 3px 3px 3px 3px #777;
+    margin: 20px auto;
+    width: 300px;
+    text-align: center;
+}
